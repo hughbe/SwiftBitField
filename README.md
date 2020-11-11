@@ -2,7 +2,17 @@
 
 Package for defining bit fields in Swift.
 
-## Example Usage
+## Usage
+
+In `package.swift` add the following line of code under the `dependencies` section
+
+```swift
+.package(name: "BitField", url: "https://github.com/hughbe/SwiftBitField", from: "1.0.0")
+```
+
+To use the library in your library, `import BitField`.
+
+## Example
 
 Use `getBit(_ index:)` to get the boolean value of a bit at a zero-based index into the raw value.
 
